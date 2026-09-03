@@ -24,11 +24,17 @@
 
         <!-- Site-specific overrides -->
         <style>
-            .navbar-brand{font-family:'Dosis',sans-serif;font-weight:700;font-size:22px;letter-spacing:.5px;color:#222 !important;padding-top:22px;}
-            .navbar-brand span{color:#2f8fd6;}
-            .lang-switch{display:inline-block;margin-left:15px;font-size:12px;color:#666;}
-            .lang-switch a{color:#2f8fd6;}
-            .lang-switch strong{color:#333;}
+            .navbar-main{padding:14px 0;}
+            .navbar-brand{padding:0 !important;}
+            .brand-logo{height:64px;width:auto;display:block;}
+            .lang-switch-li{padding:0 !important;display:flex;align-items:center;}
+            .lang-switch{display:inline-block;background:#fff;border-radius:20px;padding:6px 16px;font-size:12px;color:#1f76bd;line-height:1;}
+            .lang-switch a{color:#1f76bd !important;text-decoration:none;padding:0 !important;font-size:12px !important;border-bottom:none !important;font-family:inherit !important;}
+            .lang-switch strong{color:#115c9b;}
+            @media (max-width: 767px){
+                .brand-logo{height:48px;}
+                .lang-switch-li{padding:10px 0 !important;}
+            }
             .btn-disabled{opacity:.55;cursor:not-allowed;pointer-events:none;}
             .badge-status{display:inline-block;background:#2f8fd6;color:#fff;font-size:12px;padding:4px 10px;border-radius:2px;margin-bottom:10px;}
             .trust-strip{background:#f5f7f9;border:1px solid #e3e8ec;border-radius:3px;padding:30px;text-align:center;}
@@ -47,37 +53,6 @@
 
         <nav class="navbar navbar-static-top">
 
-            <div class="navbar-top">
-
-              <div class="container">
-                  <div class="row">
-
-                    <div class="col-sm-6 col-xs-12">
-
-                        <ul class="list-unstyled list-inline header-contact">
-                             <li> <i class="fa fa-envelope"></i> <a href="mailto:fathialwakeelorganization@gmail.com">fathialwakeelorganization@gmail.com</a> &nbsp;|&nbsp; <a href="tel:+24911945307">+249 11 945307</a> </li>
-                       </ul> <!-- /.header-contact  -->
-
-                    </div>
-
-                    <div class="col-sm-6 col-xs-12 text-right">
-
-                        <ul class="list-unstyled list-inline header-social">
-
-                            <li> <a href="#"> <i class="fa fa-facebook"></i> </a> </li>
-                            <li> <a href="#"> <i class="fa fa-instagram"></i>  </a> </li>
-                            <li> <a href="#"> <i class="fa fa-linkedin"></i>  </a> </li>
-                       </ul> <!-- /.header-social  -->
-                        <span class="lang-switch"><strong>TR</strong> | <a href="en/index.html">EN</a> | <a href="ar/index.html">AR</a></span>
-
-                    </div>
-
-
-                  </div>
-              </div>
-
-            </div>
-
             <div class="navbar-main">
 
               <div class="container">
@@ -92,7 +67,7 @@
 
                   </button>
 
-                  <a class="navbar-brand" href="index.html"><img src="assets/images/brand/logo-icon.png" alt="Fateh Al-wakil Organization Sustainable Development" style="height:60px;margin-top:-12px;"> <span style="vertical-align:middle;">Fateh <span>Al-Wakil</span></span></a>
+                  <a class="navbar-brand" href="index.html"><img src="assets/images/brand/logo-full.png" alt="Fateh Al-wakil Organization Sustainable Development" class="brand-logo"></a>
 
                 </div>
 
@@ -104,6 +79,8 @@
                     <li><a href="about.html">HAKKIMIZDA</a></li>
                     <li><a href="causes.html">PROJELERİMİZ</a></li>
                     <li><a href="contact.html">İLETİŞİM</a></li>
+
+                    <li class="lang-switch-li"><span class="lang-switch"><strong>TR</strong> | <a href="en/index.html">EN</a> | <a href="ar/index.html">AR</a></span></li>
 
                   </ul>
 
@@ -218,7 +195,7 @@
                   <div class="about-us-col">
 
                         <div class="col-icon-wrapper">
-                          <img src="assets/images/icons/our-mission-icon.png" alt="">
+                          <i class="fa fa-globe" style="font-size:56px;color:#fff;"></i>
                         </div>
                         <h3 class="col-title">Misyonumuz</h3>
                         <div class="col-details">
@@ -238,7 +215,7 @@
                   <div class="about-us-col">
 
                         <div class="col-icon-wrapper">
-                          <img src="assets/images/icons/make-donation-icon.png" alt="">
+                          <i class="fa fa-leaf" style="font-size:56px;color:#fff;"></i>
                         </div>
                         <h3 class="col-title">Sürdürülebilir Kalkınma</h3>
                         <div class="col-details">
@@ -258,7 +235,7 @@
                   <div class="about-us-col">
 
                         <div class="col-icon-wrapper">
-                          <img src="assets/images/icons/help-icon.png" alt="">
+                          <i class="fa fa-medkit" style="font-size:56px;color:#fff;"></i>
                         </div>
                         <h3 class="col-title">Acil İnsani Yardım</h3>
                         <div class="col-details">
@@ -278,7 +255,7 @@
                   <div class="about-us-col">
 
                         <div class="col-icon-wrapper">
-                          <img src="assets/images/icons/programs-icon.png" alt="">
+                          <i class="fa fa-users" style="font-size:56px;color:#fff;"></i>
                         </div>
                         <h3 class="col-title">Projelerimiz</h3>
                         <div class="col-details">
